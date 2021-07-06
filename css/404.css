@@ -1,0 +1,157 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'Mulish', sans-serif;
+    font-weight: bold;
+    color: white;
+}  
+
+/*---HEADER---*/
+
+header {
+    display: flex;
+    align-items: space-between;
+    width: 100%;
+    font-size: 2rem;
+    
+    background-color:#ff5f65;
+}
+.header__logo {
+    width: 300px;
+    height: 90px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+/*---MAIN---*/
+
+.main__container {
+    width: 100%;
+    height: calc(100vh - 200px);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: linear-gradient(#ff5f65, #e36414);
+}
+
+h1 {
+    font-size: 7rem;
+    margin-bottom: 20px;
+}
+h2 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.button {
+    width: 150px;
+    height: 50px;
+    font-family: 'Mulish', sans-serif;
+    font-size: 2rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+    background-color: rgba(255, 255, 255, 0.1) ;
+    border: none;
+    border-radius: 25px;
+    color: white;
+    cursor: pointer;
+}
+
+/*---FOOTER---*/
+
+footer {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    background-color: #e36414 ;
+}
+footer a {
+    padding-left: 30px;
+    font-size: 1.4rem;
+    color: white;
+    cursor: pointer;
+    text-decoration: none;
+}
+footer a:hover {
+    text-decoration: underline;
+}
+
+/*---MEDIA QUERIES---*/
+
+@media (max-width: 320px) {
+
+/*---MAIN---*/  
+
+.main__img {
+    display: none;
+}
+
+.main__text {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 6rem;
+    margin-bottom: 20px;
+}
+h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+/*---FOOTER---*/  
+
+footer {
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+footer a {
+    margin-bottom: 10px;
+}
+
+}
+
+@media (max-width: 600px) {
+
+/*---MAIN---*/  
+
+.main__container {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+}
+
+.main__text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*---FOOTER---*/  
+
+footer {
+    flex-direction: column;
+    align-items: flex-start;
+}
+    
+footer a {
+    margin-bottom: 10px;
+}
+
+}
+
+

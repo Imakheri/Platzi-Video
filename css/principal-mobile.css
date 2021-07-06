@@ -1,0 +1,14 @@
+@media (min-width: 320px) {
+
+    header {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+    
+    .header__menu {
+        position: absolute;
+        top: 50px;
+    }
+    
+    }
